@@ -1,0 +1,60 @@
+@import url('https://fonts.googleapis.com/css2?family=Poppins:ital,wght@0,300;0,400;0,600;0,700;1,500&display=swap');
+
+body{
+	font-family: 'Poppins', sans-serif;
+}
+.hoverEffect{
+    text-align: center;
+    min-height: 100vh;
+    align-items: center;
+}
+.title{
+    font-size: 40px;
+    color: #e80000;
+    font-weight: 700;
+    margin-bottom: 0;
+}
+.textbox{
+    position: absolute;
+    top: 50%;
+    right: 0;
+    left: 0;
+    border: 7px solid;
+    height: 200px;
+    width: 200px;
+    white-space: nowrap;
+    transform: translate(0, -50%);
+    animation: textBorder 10s infinite ease-in-out;
+    background-color: #fff;
+    overflow: hidden;
+}
+
+@keyframes textBorder{
+    15%{
+        transform: translate(300%, -50%);
+    }
+    50%{
+        transform: translate(0, -50%);
+    }
+
+}
+
+.textbox span{
+    position: absolute;
+    top: 50%;
+    left: 190%;
+    transform: translate(0, -50%) scale(1.5);
+    animation: textMove 10s infinite ease-in-out;
+    color:blue;
+
+}
+
+@keyframes textMove{
+    15%{
+        transform: translate(-170%, -50%) scale(1.5);
+    }
+    50%{
+        transform: translate(0, -50%) scale(1.5);
+    }
+
+}
